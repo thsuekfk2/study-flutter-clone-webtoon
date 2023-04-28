@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:test/screens/home_screen.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hello flutter!"),
-        ),
-        body: Center(
-          child: Text("Hello world"),
-        ),
-      ),
+      home: Scaffold(body: HomeScreen()),
     );
   }
 }
